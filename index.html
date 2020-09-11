@@ -17,15 +17,15 @@
   </head>
   <body>
 
-     <!--Audio assets-->
-     <audio id="horseAudio">
+    <!--Audio assets-->
+    <audio id="horseAudio">
         <source src="https://www.w3schools.com/JSREF/horse.ogg" type="audio/ogg">
         <source src="https://www.w3schools.com/JSREF/horse.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
-      </audio>
+    </audio>
     
-      <!-- Greetings and instructions -->
-      <div class="modal fade" id="instructions" tabindex="-1" role="dialog" aria-labelledby="instructionsLabel" aria-hidden="true">
+    <!-- Greetings and instructions -->
+    <div class="modal fade" id="instructions" tabindex="-1" role="dialog" aria-labelledby="instructionsLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
             <div class="modal-body bg-info">
@@ -35,19 +35,12 @@
             </div>
           </div>
         </div>
-      </div> 
+    </div> 
     
-      <!--Drum-->
-      <img src="assets/drum.jpg" alt="Drum" usemap="#drummap" width="100%" id="drum"><map name="drummap">
-          <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
-          <area shape="rect" coords="34,44,270,350" alt="Computer" onclick="playAudio()">
-        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
-      </map>
-
-
-      <p href="/link1"><div style="position: absolute; left: 0%; top: 0%; width: 12%; height: 8%; background-color: rgba(179, 6, 6, 0.979);">#1</div></p>
-      <a href="/link2"><div style="border-radius: 50%; position: absolute; left: 52%; top: 38%; width: 14%; height: 20%; background-color: rgb(189, 3, 133);">#2</div></a>
-
+    <!--Drum-->
+    <img src="assets/drum.jpg" alt="Drum" id="drum" height="100%" width="100%">
+    <p href="/link1"><div style="position: absolute; left: 0%; top: 0%; width: 12%; height: 8%; background-color: rgba(179, 6, 6, 0.979);">#1</div></p>
+    <a href="/link2"><div style="border-radius: 50%; position: absolute; left: 52%; top: 38%; width: 14%; height: 20%; background-color: rgb(189, 3, 133);">#2</div></a>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
