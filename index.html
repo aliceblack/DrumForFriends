@@ -1,46 +1,57 @@
-<!DOCTYPE html>
-<html>
-<head>
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Hi!</title>
-
+    <!--GoogleFonts-->
     <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100&display=swap" rel="stylesheet">
-
+    
     <link rel="stylesheet" href="styles.css">
 
-</head>
-<body>
+    <title>Hi!</title>
+  </head>
+  <body>
 
-<p>Dedicated to you!</p>
-<p>Turn audio on and play your drum!</p>
+     <!--Audio assets-->
+     <audio id="horseAudio">
+            <source src="https://www.w3schools.com/JSREF/horse.ogg" type="audio/ogg">
+            <source src="https://www.w3schools.com/JSREF/horse.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+      
+          <!-- Greetings and instructions -->
+          <div class="modal fade" id="instructions" tabindex="-1" role="dialog" aria-labelledby="instructionsLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-body bg-info">
+                      <p>Dedicated to you!</p>
+                      <p>Turn audio on and play your drum!</p>
+                      <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div> 
+      
+          <!--Drum-->
+          <img src="assets/drum.jpg" alt="Drum" usemap="#drummap" width="400" height="379"><map name="drummap">
+              <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+              <area shape="rect" coords="34,44,270,350" alt="Computer" onclick="playAudio()">
+            <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+          </map>
 
 
-<audio id="horseAudio">
-  <source src="https://www.w3schools.com/JSREF/horse.ogg" type="audio/ogg">
-  <source src="https://www.w3schools.com/JSREF/horse.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-<img src="assets/drum.jpg" alt="Drum" usemap="#drummap" width="400" height="379">
-
-<map name="drummap">
-  <area shape="rect" coords="34,44,270,350" alt="Computer" onclick="playAudio()">
-  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
-  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
-</map>
-
-<script>
-    var horseAudio = document.getElementById("horseAudio"); 
-
-    function playAudio() { 
-        horseAudio.play(); 
-    } 
-
-    function pauseAudio() { 
-        horseAudio.pause(); 
-    } 
-</script>
-
+    <script src="index.js"></script>
+    
 </body>
+
 </html>
