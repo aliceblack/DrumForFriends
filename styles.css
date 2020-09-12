@@ -14,11 +14,3 @@ body {
     width: 100%;
 }
 
-
-@media (orientation: landscape) {
-    /* landscape styles */
-}
-
-@media (orientation: portrait) {
-    /* portrait styles */
-}
