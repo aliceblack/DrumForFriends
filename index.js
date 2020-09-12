@@ -1,12 +1,14 @@
-var horseAudio = document.getElementById("horseAudio"); 
 
-function playAudio() { 
-    horseAudio.play(); 
+function playAudio(reference) { 
+    var audio = document.getElementById(reference); 
+    audio.play(); 
 } 
 
-function pauseAudio() { 
-    horseAudio.pause(); 
+function pauseAudio(reference) { 
+    var audio = document.getElementById(reference); 
+    audio.pause(); 
 } 
 
 
-$('#instructions').modal('show')
+
+$('#instructions').modal('show');

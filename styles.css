@@ -4,12 +4,21 @@ body {
     background-color: black;
     color: white; 
     font-family: 'Gayathri', sans-serif;
+    font-size: 18px;
 }
-
 
 #drum {
     position: absolute;
     top: 0;
     max-width: 100%;
     width: 100%;
+}
+
+
+@media (orientation: landscape) {
+    /* landscape styles */
+}
+
+@media (orientation: portrait) {
+    /* portrait styles */
 }

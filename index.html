@@ -1,27 +1,75 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <!-- Required meta tags -->
+    <!--Bootstrap Required meta tags-->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
+    <!--Bootstrap CSS-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!--GoogleFonts-->
+    <!--Google Fonts-->
     <link href="https://fonts.googleapis.com/css2?family=Gayathri:wght@100&display=swap" rel="stylesheet">
     
     <link rel="stylesheet" href="styles.css">
 
-    <title>Hi!</title>
+    <title>Drum</title>
   </head>
   <body>
 
     <!--Audio assets-->
-    <audio id="horseAudio">
-        <source src="https://www.w3schools.com/JSREF/horse.ogg" type="audio/ogg">
-        <source src="https://www.w3schools.com/JSREF/horse.mp3" type="audio/mpeg">
+    <audio id="kickOne">
+        <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/909/Kick.ogg" type="audio/ogg">
         Your browser does not support the audio element.
+    </audio>
+    <audio id="kickTwo">
+      <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/909/Kick.ogg" type="audio/ogg">
+    </audio>
+    <audio id="snareOne">
+      <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/sessiondry/snare-sessiondry-stick-hit-hard.ogg" type="audio/ogg">
+    </audio>
+    <audio id="snareTwo">
+      <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/sessiondry/snare-sessiondry-stick-hit-hard.ogg" type="audio/ogg">
+    </audio>
+    <audio id="snareThree">
+      <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/sessiondry/snare-sessiondry-stick-hit-hard.ogg" type="audio/ogg">
+    </audio>
+    <audio id="snareFour">
+      <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/sessiondry/snare-sessiondry-stick-hit-hard.ogg" type="audio/ogg">
+    </audio>
+    <audio id="closedHatOne">
+      <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/909/ClosedHat.ogg" type="audio/ogg">
+    </audio>
+    <audio id="closedHatTwo">
+      <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/909/ClosedHat.ogg" type="audio/ogg">
+    </audio>
+    <audio id="closedHatThree">
+      <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/909/ClosedHat.ogg" type="audio/ogg">
+    </audio>
+    <audio id="closedHatFour">
+      <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/909/ClosedHat.ogg" type="audio/ogg">
+    </audio>
+    <audio id="closedHatFive">
+      <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/909/ClosedHat.ogg" type="audio/ogg">
+    </audio>
+    <audio id="closedHatSix">
+      <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/909/ClosedHat.ogg" type="audio/ogg">
+    </audio>
+    <audio id="openHatOne">
+      <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/909/OpenHat.ogg" type="audio/ogg">
+    </audio>
+    <audio id="openHatTwo">
+      <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/909/OpenHat.ogg" type="audio/ogg">
+    </audio>
+    <audio id="openHatThree">
+      <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/909/OpenHat.ogg" type="audio/ogg">
+    </audio>
+    <audio id="openHatFour">
+      <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/909/OpenHat.ogg" type="audio/ogg">
+    </audio>
+    <audio id="openHatFive">
+      <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/909/OpenHat.ogg" type="audio/ogg">
+    </audio>
+    <audio id="openHatSix">
+      <source src="https://learningmusic.ableton.com/lessons/sounds/simplesequencer/909/OpenHat.ogg" type="audio/ogg">
     </audio>
     
     <!-- Greetings and instructions -->
@@ -30,7 +78,8 @@
           <div class="modal-content">
             <div class="modal-body bg-info">
                   <p>Dedicated to you!</p>
-                  <p>Turn audio on and play your drum!</p>
+                  <p>Turn <b>audio</b> on and play your drum!</p>
+                  <p><b>Landscape</b> for a better experience!</p>
                   <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
             </div>
           </div>
@@ -39,8 +88,24 @@
     
     <!--Drum-->
     <img src="assets/drum.jpg" alt="Drum" id="drum" height="100%" width="100%">
-    <p href="/link1"><div style="position: absolute; left: 0%; top: 0%; width: 12%; height: 8%; background-color: rgba(179, 6, 6, 0.979);">#1</div></p>
-    <a href="/link2"><div style="border-radius: 50%; position: absolute; left: 52%; top: 38%; width: 14%; height: 20%; background-color: rgb(189, 3, 133);">#2</div></a>
+    <div onclick="playAudio('snareOne')" style="border-radius: 50%; position: absolute; left: 47%; top: 36%; width: 14%; height: 20%; background-color: rgba(32, 9, 165, 0);"></div>
+    <div onclick="playAudio('openHatOne')" style="border-radius: 50%; position: absolute; left: 0%; top: 34%; width: 8%; height: 30%; background-color: rgba(3, 189, 65, 0);"></div>
+    <div onclick="playAudio('openHatTwo')" style="border-radius: 50%; position: absolute; left: 10%; top: 30%; width: 22%; height: 28%; background-color: rgba(211, 210, 226, 0);"></div>
+    <div onclick="playAudio('openHatThree')" style="border-radius: 50%; position: absolute; left: 22%; top: 10%; width: 19%; height: 24%; background-color: rgba(177, 189, 3, 0);"></div>
+    <div onclick="playAudio('snareTwo')" style="border-radius: 50%; position: absolute; left: 32%; top: 36%; width: 14%; height: 20%; background-color: rgba(22, 3, 189, 0);"></div>
+    <div onclick="playAudio('closedHatFive')" style="border-radius: 50%; position: absolute; left: 37%; top: 25%; width: 10%; height: 12%; background-color: rgba(206, 112, 175, 0);"></div>
+    <div onclick="playAudio('closedHatOne')" style="border-radius: 50%; position: absolute; left: 48%; top: 24%; width: 10%; height: 12%; background-color: rgba(3, 161, 189, 0);"></div>
+    <div onclick="playAudio('openHatFour')" style="border-radius: 50%; position: absolute; left: 52%; top: 8%; width: 17%; height: 22%; background-color: rgba(189, 77, 3, 0);"></div>
+    <div onclick="playAudio('closedHatFour')" style="border-radius: 50%; position: absolute; left: 8%; top: 62%; width: 18%; height: 22%; background-color: rgba(255, 218, 5, 0);"></div>
+    <div onclick="playAudio('snareThree')" style="border-radius: 50%; position: absolute; left: 28%; top: 60%; width: 14%; height: 20%; background-color: rgba(53, 3, 189, 0);"></div>
+    <div onclick="playAudio('snareFour')" style="border-radius: 50%; position: absolute; left: 56%; top: 60%; width: 14%; height: 22%; background-color: rgba(46, 2, 207, 0);"></div>
+    <div onclick="playAudio('closedHatSix')" style="border-radius: 50%; position: absolute; left: 64%; top: 44%; width: 10%; height: 12%; background-color: rgba(189, 3, 133, 0);"></div>
+    <div onclick="playAudio('openHatFive')" style="border-radius: 50%; position: absolute; left: 65%; top: 19%; width: 22%; height: 26%; background-color: rgba(3, 46, 189, 0);"></div>
+    <div onclick="playAudio('openHatSix')" style="border-radius: 50%; position: absolute; left: 74%; top: 44%; width: 28%; height: 37%; background-color: rgba(68, 3, 189, 0);"></div>
+    <div onclick="playAudio('closedHatTwo')" style="border-radius: 50%; position: absolute; left: 70%; top: 80%; width: 13%; height: 17%; background-color: rgba(3, 177, 189, 0);"></div>
+    <div onclick="playAudio('closedHatThree')" style="border-radius: 50%; position: absolute; left: 86%; top: 81%; width: 11%; height: 17%; background-color: rgba(173, 162, 170, 0);"></div>
+    <div onclick="playAudio('kickOne')" style="border-radius: 50%; position: absolute; left: 44%; top: 72%; width: 4%; height: 15%; background-color: rgba(27, 6, 212, 0);"></div>
+    <div onclick="playAudio('kickTwo')" style="border-radius: 50%; position: absolute; left: 25%; top: 85%; width: 14%; height: 12%; background-color: rgba(43, 3, 189, 0);"></div>
 
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

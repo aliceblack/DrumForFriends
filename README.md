@@ -3,7 +3,7 @@ A funny personal drum experience
 
 
 ## Development
-Server:
+Download http-server. Run:
 ```
 http-server .
 ```
